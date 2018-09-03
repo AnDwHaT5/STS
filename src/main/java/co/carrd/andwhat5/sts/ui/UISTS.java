@@ -27,6 +27,8 @@ public class UISTS {
     NBTTagCompound[] pokemon;
     Player player;
 
+    int noPokemon = 0;
+
     public UISTS(Player player, NBTTagCompound[] pokemon)
     {
         this.pokemon = pokemon;
@@ -54,11 +56,18 @@ public class UISTS {
             }
             else
             {
+                noPokemon += 1;
                 int price = Utilities.getPrice(poke);
                 Consumer<Action.Click> action = a ->
                 {
-                    UIConfirm con = new UIConfirm(player, poke, price);
-                    con.displayGUI();
+                    if(noPokemon == 1)
+                    {
+                        player.sendMessage(Text.of("[STS] You can't sell your last Pokemon!"));
+                    }
+                    else {
+                        UIConfirm con = new UIConfirm(player, poke, price);
+                        con.displayGUI();
+                    }
                 };
                 ItemStack p = Utilities.getPokemonItem(EnumPokemon.getFromNameAnyCase(poke.getString(NbtKeys.NAME)), poke.getInteger(NbtKeys.FORM), poke.getBoolean(NbtKeys.IS_EGG), poke.getBoolean(NbtKeys.IS_SHINY));
                 ArrayList<Text> lore = new ArrayList<>();

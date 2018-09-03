@@ -28,7 +28,7 @@ import java.util.List;
         id = "sts",
         name = "STS",
         authors = "AnDwHaT5",
-        version = "1.0.0"
+        version = "1.0.1"
 )
 public class STS {
 
