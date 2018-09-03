@@ -1,0 +1,7 @@
+#releases
+.idea
+build
+.gradle
+libs-
+out
+STS-Development.iml
