@@ -25,7 +25,7 @@ public class Utilities {
             "zapdos", "moltres", "articuno", "mew", "mewtwo", "ho-oh",
             "lugia", "entei", "raikou", "suicune", "celebi", "registeel", "regice",
             "regirock", "latios", "latias", "kyogre", "groudon", "rayquaza", "jirachi",
-            "deoxys", "uxie", "mespret", "azelf", "manaphy", "dialga", "palkia",
+            "deoxys", "uxie", "mespret", "azelf", "manaphy", "dialga", "palkia", "heatran", "regigigas",
             "giratina", "arceus", "darkrai", "cresselia", "shaymin", "victini",
             "cobalion", "terrakion", "verizion" , "zekrom", "reshiram", "kyurem",
             "thundorus", "tornadus", "landorus", "melotta", "keldeo", "genesect",
